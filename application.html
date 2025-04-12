@@ -26,10 +26,13 @@ Date: 4/11/25 -->
         <form novalidate> 
             <div class="first-name">
                 <div class="name">
-                    <label for="name">First Name:</label>
+                    <label for="name">First Name:
+                        <span class="valid">✅</span>
+                        <span class="invalid">⛔️</span>
+                    </label>
                 </div>
                 <div>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="first" required>
                 </div>
             </div>
             <div class="last-name">
@@ -37,7 +40,7 @@ Date: 4/11/25 -->
                     <label for="last">Last Name:</label>
                 </div>
                 <div class="last-box">
-                    <input type="text" id="last" name="name" required>
+                    <input type="text" id="last" name="last" required>
                 </div>
             </div>
             <div class="email">
@@ -61,7 +64,7 @@ Date: 4/11/25 -->
                     <label for="school-id">Your Student ID: </label>
                 </div>
                 <div class="school-id-box">
-                    <input type="text" id="school-id" name="school-id" required>
+                    <input readonly type="text" id="school-id" name="school-id" required>
                 </div>
                 <button id="gen-button">Generate</button>
             </div>

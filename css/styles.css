@@ -181,7 +181,15 @@ form {
     padding: 7px;
 }
 
+.valid {
+    margin-left: 5px;
+    display: none;
+}
 
+.invalid {
+    margin-left: 5px;
+    display: none;
+}
 
 
 
