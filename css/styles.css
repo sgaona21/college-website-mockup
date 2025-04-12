@@ -8,6 +8,7 @@ Date: 4/11/25
     margin: 0;
     padding: 0;
     list-style-type: none;
+    text-decoration: none;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -28,3 +29,8 @@ h1 {
     padding: 1rem;
     flex-grow: 1;
 }
+
+a:visited {
+    color: inherit;
+  }
+  
