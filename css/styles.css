@@ -1,0 +1,32 @@
+/*
+Steven Gaona STE2342585
+Date: 4/11/25
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    padding: 2rem;
+    text-align: center;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+
+#nav-menu-container {
+    grid-column: 1;
+    background-color: aqua;
+}
+
+#main-content-container {
+    grid-column: 2;
+    background-color: aquamarine;
+}
+
