@@ -7,7 +7,7 @@ Date: 4/11/25 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Arizona College</title>
+    <title>Arizona College: Application</title>
 </head>
 <body>
     <h1>Arizona College</h1>
@@ -22,9 +22,28 @@ Date: 4/11/25 -->
     </ul>
 
     <div id="main-content-container">
-        <p>Welcome to Arizona college. Home of the Rattlesnakes!</p>
+        <form novalidate> 
+            <div class="first-name">
+                <label for="name">First Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="last-name">
+                <label for="name">Last Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="email">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="submit">
+                <input type="submit">    
+            </div>
+        </form>
     </div>
 
+    <footer>
+        <p>&copy; 2025 Arizona College™</p>
+    </footer>
     <script src="js/main.js"></script>
 </body>
 </html>
