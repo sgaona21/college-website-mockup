@@ -53,15 +53,40 @@ a:visited {
 
 
 /*********** APPLICATION PAGE ***********/
+h2 {
+    text-align: center;
+    margin: 1rem;
+}
+
 form {
     display: grid;
     margin: auto;
     max-width: 60%;
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "first-name last-name"
-    "email email";
+    "email phone"
+    "school-id .";
+}
+
+.first-name input[type="text"], .last-name input[type="text"], .email input[type="email"], .phone-container input[type="tel"], .school-id-container input[type=text] {
+    background-color: rgb(232, 232, 232);
+    border: none;
+    border-radius: 5px;
+    height: 2rem;
+    width: 250px;
+    padding: 5px;
+    font-size: medium;
+}
+
+.first-name input[type="text"]:focus, .last-name input[type="text"]:focus, .email input[type="email"]:focus, .phone-box input[type="tel"]:focus, .school-id-container input[type=text]:focus {
+    outline: none;
+    border: 2px solid darkgray;
+}
+
+.first-name .name, .last-label, .email-label, .phone-label, .school-id-label {
+    margin-bottom: 10px;
 }
 
 .first-name {
@@ -70,14 +95,7 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
-}
-.first-name input[type="text"], .last-name input[type="text"] {
-    background-color: rgb(232, 232, 232);
-    border: none;
-    border-radius: 5px;
-    height: 2rem;
-    width: 65%;
+    margin: auto;
 }
 
 .last-name {
@@ -86,7 +104,7 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: self-start;
+    margin: auto;
 
 }
 
@@ -96,9 +114,44 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: self-start;
+    margin: auto;
 }
 
+.phone-container {
+    grid-area: phone;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.school-id-container {
+    position: relative;
+    grid-area: school-id;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#gen-button {
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+    margin-bottom: 1rem;
+    padding: 9px;
+    border-radius: 5px;
+    border: none;
+    background-color: aquamarine;
+}
+
+#gen-button:hover {
+    cursor: pointer;
+    border: 2px lightgray solid;
+    padding: 7px;
+}
 
 
 
