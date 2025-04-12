@@ -7,6 +7,8 @@ Date: 4/11/25
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    font-family: 'Nunito', sans-serif;
 }
 
 h1 {
@@ -14,19 +16,15 @@ h1 {
     text-align: center;
 }
 
-#grid-container {
-    display: grid;
-    grid-template-columns: 20% 80%;
+#nav-menu {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
 }
 
-
-#nav-menu-container {
-    grid-column: 1;
-    background-color: aqua;
-}
-
-#main-content-container {
-    grid-column: 2;
+#nav-menu li {
+    text-align: center;
     background-color: aquamarine;
+    padding: 1rem;
+    flex-grow: 1;
 }
-
