@@ -293,6 +293,21 @@ form {
     display: none;
 }
 
+/*********** PROJECTS PAGES ***********/
+ol {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+ol li {
+    padding: 1rem;
+}
+
+#link {
+    color: red;
+}
 
 
 
