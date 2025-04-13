@@ -59,16 +59,7 @@ a:visited {
 
 
  /*********** HOME PAGE ***********/
-.unlock {
-    text-align: center;
-    font-size: 5rem;
-
-}
-
-
-
-/*********** APPLICATION PAGE ***********/
-.home-h2 {
+ .home-h2 {
     text-align: center;
     margin: 1rem;
     letter-spacing: 1px;
@@ -84,6 +75,11 @@ a:visited {
     border-radius: 5px;
 }
 
+
+
+
+
+/*********** APPLICATION PAGE ***********/
 form {
     display: grid;
     margin: auto;
