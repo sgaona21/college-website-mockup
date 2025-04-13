@@ -137,6 +137,10 @@ a:visited {
 
 
 /*********** APPLICATION PAGE ***********/
+h2 {
+    text-align: center;
+    padding: 1rem;
+}
 form {
     display: grid;
     margin: auto;
