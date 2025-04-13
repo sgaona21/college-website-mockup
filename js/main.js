@@ -15,7 +15,7 @@ const genButton = document.getElementById('gen-button');
 const degreeSelection = document.getElementById('degree');
 const submitButton = document.getElementById('submit');
 
-// this code uses three regular expressions and assigns them each to their own variable. I used chatgpt to generate the RegEx formuals 
+// this code uses three regular expressions and assigns them each to their own variable. I used chatgpt to generate the RegEx formulas.
 const nameRegEx = /^[A-Za-z]{2,}$/;
 const emailRegEx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const phoneRegEx = /^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$/;
