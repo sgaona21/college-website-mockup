@@ -135,6 +135,25 @@ a:visited {
 
 
 
+/*********** ATHLETICS PAGE ***********/
+#athletics-video {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.ath-vid {
+    width: 80%;
+    height: 500px;
+}
+
+.ath-p {
+    text-align: center;
+    padding: 1rem;
+}
+
+
+
 
 /*********** APPLICATION PAGE ***********/
 h2 {
