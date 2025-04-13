@@ -69,7 +69,7 @@ form {
     "email phone"
     "school-id ."
     "degree ."
-    "submit .";
+    "submit confirm";
 }
 
 .first-name input[type="text"], .last-name input[type="text"], .email input[type="email"], .phone-container input[type="tel"], .school-id-container input[type=text], .degree-container select {
@@ -171,7 +171,14 @@ form {
     border: none;
     background-color: aquamarine;
     width: 250px;
+}
 
+.confirmation-container {
+    grid-area: confirm;
+    display: none;
+    align-items: center;
+    color: green;
+    
 }
 
 
@@ -181,16 +188,6 @@ form {
     padding: 7px;
 }
 
-.valid {
-    margin-left: 5px;
+.first-valid, .first-invalid, .last-valid, .last-invalid, .email-valid, .email-invalid, .phone-valid, .phone-invalid, .id-valid, .id-invalid, .degree-valid, .degree-invalid {
     display: none;
 }
-
-.invalid {
-    margin-left: 5px;
-    display: none;
-}
-
-
-
-

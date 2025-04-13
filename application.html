@@ -23,12 +23,12 @@ Date: 4/11/25 -->
 
     <div id="main-content-container">
         <h2>Appplicant Info:</h2>
-        <form novalidate> 
+        <form novalidate id="form"> 
             <div class="first-name">
                 <div class="name">
                     <label for="name">First Name:
-                        <span class="valid">✅</span>
-                        <span class="invalid">⛔️</span>
+                        <span class="first-valid">✅</span>
+                        <span class="first-invalid">⛔️</span>
                     </label>
                 </div>
                 <div>
@@ -37,7 +37,10 @@ Date: 4/11/25 -->
             </div>
             <div class="last-name">
                 <div class="last-label">
-                    <label for="last">Last Name:</label>
+                    <label for="last">Last Name:
+                        <span class="last-valid">✅</span>
+                        <span class="last-invalid">⛔️</span>
+                    </label>
                 </div>
                 <div class="last-box">
                     <input type="text" id="last" name="last" required>
@@ -45,7 +48,10 @@ Date: 4/11/25 -->
             </div>
             <div class="email">
                 <div class="email-label">
-                    <label for="email">Email:</label>
+                    <label for="email">Email:
+                        <span class="email-valid">✅</span>
+                        <span class="email-invalid">⛔️</span>
+                    </label>
                 </div>
                 <div class="email-box">
                     <input type="email" id="email" name="email" required>
@@ -53,7 +59,10 @@ Date: 4/11/25 -->
             </div>
             <div class="phone-container">
                 <div class="phone-label">
-                    <label for="phone">Phone Number:</label>
+                    <label for="phone">Phone Number:
+                        <span class="phone-valid">✅</span>
+                        <span class="phone-invalid">⛔️</span>
+                    </label>
                 </div>
                 <div class="phone-box">
                     <input type="tel" id="phone" name="phone" required>
@@ -61,24 +70,33 @@ Date: 4/11/25 -->
             </div>
             <div class="school-id-container">
                 <div class="school-id-label">
-                    <label for="school-id">Your Student ID: </label>
+                    <label for="school-id">Your Student ID: 
+                        <span class="id-valid">✅</span>
+                        <span class="id-invalid">⛔️</span>
+                    </label>
                 </div>
                 <div class="school-id-box">
                     <input readonly type="text" id="school-id" name="school-id" required>
                 </div>
-                <button id="gen-button">Generate</button>
+                <button id="gen-button" type="button">Generate</button>
             </div>
             <div class="degree-container">
-                <label for="degree">Select a Program:</label>
+                <label for="degree">Select a Program:
+                    <span class="degree-valid">✅</span>
+                    <span class="degree-invalid">⛔️</span>
+                </label>
                 <select name="degree" id="degree">
                     <option value="" disabled selected hidden></option>
-                    <option value="red">Nursing</option>
-                    <option value="blue">Engineering</option>
-                    <option value="green">Education</option>
+                    <option value="nursing">Nursing</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="education">Education</option>
                 </select>
             </div>
             <div class="submit-container">
-                <input type="submit">    
+                <input type="submit" id="submit">    
+            </div>
+            <div class="confirmation-container">
+                <p id="confirm-message">Application submitted successfully! Please check your email.</p>    
             </div>
         </form>
     </div>
