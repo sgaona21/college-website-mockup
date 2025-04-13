@@ -27,6 +27,8 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 1rem;
+    border-top: solid lightgray 2px;
+    border-bottom: solid lightgray 2px;
 }
 
 #nav-menu li {
@@ -194,3 +196,37 @@ form {
 .first-valid, .first-invalid, .last-valid, .last-invalid, .email-valid, .email-invalid, .phone-valid, .phone-invalid, .id-valid, .id-invalid, .degree-valid, .degree-invalid {
     display: none;
 }
+
+
+
+
+
+/*********** DEGREE PAGE ***********/
+#degree-program-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: auto;
+    max-width: 90%;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+#nursing, #comp-science, #business, #education {
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: aquamarine;
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 90%;
+    border: solid 2px lightgray;
+}
+
+#nursing h3, #comp-science h3, #education h3, #business h3 {
+    margin-bottom: 1rem;
+}
+
+
+
