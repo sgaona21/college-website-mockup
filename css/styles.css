@@ -13,10 +13,14 @@ Date: 4/11/25
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
 }
+body {
+    background-color: whitesmoke;
+}
 
 h1 {
     padding: 2rem;
     text-align: center;
+    letter-spacing: 5px;
 }
 
 #nav-menu {
