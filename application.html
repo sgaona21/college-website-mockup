@@ -12,6 +12,7 @@ Date: 4/11/25 -->
 <body>
     <h1>Arizona College</h1>
 
+    <!-- this code creates and unordered list for the navigation menu. I used an a tag to create a link for each page on the site.  -->
     <ul id="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -23,6 +24,8 @@ Date: 4/11/25 -->
 
     <div id="main-content-container">
         <h2>Appplicant Info:</h2>
+
+        <!-- here i created html markup for the form. I nested the labels and inputs inside of their own divs for css targeting purposes. I also included a span that will give the user feedback in the form of a positive or negative emoji. These will be dynamically displayed on the page with js.  -->
         <form novalidate id="form"> 
             <div class="first-name">
                 <div class="name">
@@ -75,6 +78,8 @@ Date: 4/11/25 -->
                         <span class="id-invalid">⛔️</span>
                     </label>
                 </div>
+
+                <!-- for the school id box i included the readonly attribute to make sure the user couldnt type anything into the box and would have to click the generate button -->
                 <div class="school-id-box">
                     <input readonly type="text" id="school-id" name="school-id" required>
                 </div>
@@ -85,6 +90,8 @@ Date: 4/11/25 -->
                     <span class="degree-valid">✅</span>
                     <span class="degree-invalid">⛔️</span>
                 </label>
+
+                <!-- this is the markup for the select option menu. the first option is empty and has been disabled to that one selection wasnt already chosen for the user.  -->
                 <select name="degree" id="degree">
                     <option value="" disabled selected hidden></option>
                     <option value="nursing">Nursing</option>
@@ -96,12 +103,15 @@ Date: 4/11/25 -->
             <div class="submit-container">
                 <input type="submit" id="submit">    
             </div>
+
+            <!-- Here is the confirmation message that is hidden but is dynamically added to the page upon passing validation -->
             <div class="confirmation-container">
                 <p id="confirm-message">Application submitted successfully! Please check your email.</p>    
             </div>
         </form>
     </div>
 
+    <!-- this is the code that creates a copyright for the bottom of the page -->
     <footer>
         <p>&copy; 2025 Arizona College™</p>
     </footer>
