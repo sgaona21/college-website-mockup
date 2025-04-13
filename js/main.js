@@ -84,7 +84,7 @@ degreeSelection.addEventListener('change', () => {
 });
 
 // this code applies the final form validation before submission. it uses prevent default to prevent the page from refreshing and clearing the user inputs and selections. it uses if logic to check and make sure that all variables are true before dislaying a confirmation message to the user. 
-// it then also perfoms some more if logic that makes sure the green or red emojis only display at the right times. if the user leaves any fields blank, it provides a red emoji next to each label. 
+// it then also perfoms some more if logic that makes sure the green or red emojis only display at the right times. if the user leaves any fields blank, it provides a red emoji next to each label. all fields must pass before cofirmation message appears
 submitButton.addEventListener('click', () => {
     event.preventDefault();
 
