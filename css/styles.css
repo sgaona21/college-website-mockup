@@ -58,10 +58,30 @@ a:visited {
 
 
 
+ /*********** HOME PAGE ***********/
+.unlock {
+    text-align: center;
+    font-size: 5rem;
+
+}
+
+
+
 /*********** APPLICATION PAGE ***********/
-h2 {
+.home-h2 {
     text-align: center;
     margin: 1rem;
+    letter-spacing: 1px;
+    padding: 1rem;
+}
+
+.welcome-video {
+    display: flex;
+    justify-content: center;
+}
+
+.welcome-video iframe {
+    border-radius: 5px;
 }
 
 form {
