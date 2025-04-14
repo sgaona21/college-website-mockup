@@ -3,7 +3,13 @@ Steven Gaona STE2342585
 Date: 4/11/25
 */
 
-// ********** FORM ********** //
+// ********** TUITION PAGE ********** //
+
+
+
+
+
+// ********** APPLICATION PAGE ********** //
 // here all of my dom elements assigned to variables: 
 const form = document.getElementById("form");
 const firstNameInput = document.querySelector('.first-name input[type="text"]');
