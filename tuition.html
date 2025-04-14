@@ -22,21 +22,39 @@ Date: 4/11/25 -->
         <li><a href="projects.html">Projects</a></li>
     </ul>
 
-    <!-- this code creates a header and then a description of the athletic department.  -->
-    <h2>Athletics Department</h2>
-    <p class="ath-p">Arizona College is home to many national championships! Our athletics program allows you to take your game to the next level. Many AZ College graduates have gone on to play professional sports.</p>
+    <h2>Tuititon Costs:</h2>
+    <p class="tuition-p">Arizona College calculates tuition on a per semester basis. Each semester is 6 months. The cost for in state students is $5,000 per semester. The cost for out of out state students is $10,000 per semester.  </p>
 
-    <!-- this code includes an embedded video from youtube that autoplays upon page load. the URL for the video is: https://www.youtube.com/watch?v=q2Rl4YP5om8&t=1s -->
-    <div id="athletics-video">
-        <iframe class="ath-vid" width="560" height="315" 
-          src="https://www.youtube.com/embed/q2Rl4YP5om8?controls=0&autoplay=1&mute=1"
-          title="YouTube video player" frameborder="0"
-          allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-        </iframe>
-      </div>
-      
+    <div id="tuition-calc-container">
+        <section class="in-state">
+            <h4>In-State Calculator:</h4>
+            <label for="in-state">Number of Semesters:</label>
+            <select name="in-state" id="in-state">
+                <option value="" disabled selected hidden></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <p>Your Total Tuition: <span id="in-state-total"></span></p>
+        </section>
+        <section class="out-state">
+            <h4>Out-of-State Calculator:</h4>
+            <label for="out-state">Number of Semesters:</label>
+            <select name="out-state" id="out-state">
+                <option value="" disabled selected hidden></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <p>Your Total Tuition: <span id="out-state-total"></span></p>
+        </section>
+    </div>
     
+    
+
+          
       <!-- this is the code that creates a copyright for the bottom of the page -->
     <footer>
         <p>&copy; 2025 Arizona College™</p>

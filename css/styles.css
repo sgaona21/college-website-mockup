@@ -148,22 +148,50 @@ a:visited {
 
 
 
-/*********** ATHLETICS PAGE ***********/
-#athletics-video {
+/*********** TUITION PAGE ***********/
+.tuition-p {
+    text-align: center;
+    max-width: 60%;
+    margin: auto
+}
+
+.in-state, .out-state {
+    background-color: aquamarine;
+    border: solid 2px lightgrey;
+    border-radius: 10px;
+    margin: 2rem;
+    width: 400px
+}
+
+.in-state h4, .in-state label, .in-state p, .out-state h4, .out-state label, .out-state p {
+    padding: 1rem;
+}
+
+#tuition-calc-container h4 {
+    text-align: center;
+}
+
+.in-state select, .out-state select {
+    background-color: rgb(232, 232, 232);
+    border: none;
+    border-radius: 5px;
+    width: 50px;
+    padding: 3px;
+    font-size: medium;
+}
+
+.in-state select:focus, .out-state select:focus {
+    outline: none;
+    padding: 1px;
+    border: 2px solid darkgray;
+}
+
+#tuition-calc-container {
     display: flex;
     justify-content: center;
-    padding: 1rem;
+
 }
 
-.ath-vid {
-    width: 80%;
-    height: 500px;
-}
-
-.ath-p {
-    text-align: center;
-    padding: 1rem;
-}
 
 
 
