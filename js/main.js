@@ -4,6 +4,28 @@ Date: 4/11/25
 */
 
 // ********** TUITION PAGE ********** //
+inStateSelection = document.getElementById('in-state');
+outStateSelection = document.getElementById('out-state');
+
+function calculateTuition(tuition) {
+    if (tuition == 5000) {
+        let semesters = parseInt(inStateSelection.value);
+        semesters = semesters * tuition;
+        document.getElementById('in-state-total').innerText = `$${semesters.toLocaleString()}`;
+    } else if (tuition == 10000) {
+        let semesters = parseInt(outStateSelection.value);
+        semesters = semesters * tuition;
+        document.getElementById('out-state-total').innerText = `$${semesters.toLocaleString()}`;
+    }
+}
+
+inStateSelection.addEventListener('change', () => {
+    calculateTuition(5000);
+});
+outStateSelection.addEventListener('change', () => {
+    calculateTuition(10000);
+});
+
 
 
 
