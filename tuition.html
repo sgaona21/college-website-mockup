@@ -52,6 +52,15 @@ Date: 4/11/25 -->
             <p>Your Total Tuition: <span id="out-state-total"></span></p>
         </section>
     </div>
+
+    <!-- this code creates the html markup for the zip code calculator. it contains two p elements that remain hidden until displayed dynamically -->
+    <div id="zip-calc">
+        <h4>Enter your zip code to see which tuition rate applies to you!</h4>
+        <input type="text" id="zip-input">
+        <button id="zip-submit">Submit</button>
+        <p class="congrats">Congrats! You qualify for IN-STATE tuition!</p>
+        <p class="no-congrats">Based on your location, you qualify for OUT-OF-STATE tuition.</p>
+    </div>
     
       <!-- this is the code that creates a copyright for the bottom of the page -->
     <footer>

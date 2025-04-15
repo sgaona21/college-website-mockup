@@ -159,7 +159,7 @@ a:visited {
     background-color: aquamarine;
     border-radius: 10px;
     padding: 2rem;
-    max-width: 90%;
+    max-width: 80%;
     border: solid 2px lightgray;
 }
 
@@ -174,7 +174,7 @@ a:visited {
 .tuition-p {
     /* centers text description */
     text-align: center;
-    max-width: 60%;
+    max-width: 50%;
     margin: auto
 }
 
@@ -187,7 +187,7 @@ a:visited {
     width: 400px
 }
 
-.in-state h4, .in-state label, .in-state p, .out-state h4, .out-state label, .out-state p {
+.in-state h4, .in-state label, .in-state p, .out-state h4, .out-state label, .out-state p, #zip-calc h4, #zip-calc p {
     padding: 1rem;
 }
 
@@ -205,7 +205,8 @@ a:visited {
     font-size: medium;
 }
 
-.in-state select:focus, .out-state select:focus {
+.in-state select:focus, .out-state select:focus, #zip-input:focus {
+    /* creates a border upon mouse hover */
     outline: none;
     padding: 1px;
     border: 2px solid darkgray;
@@ -214,8 +215,42 @@ a:visited {
 #tuition-calc-container {
     display: flex;
     justify-content: center;
-
 }
+
+#zip-calc {
+    width: 400px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    border: solid lightgray 2px;
+    margin: auto;
+}
+
+#zip-input {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgb(232, 232, 232);
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    padding: 3px;
+    font-size: medium;
+}
+
+.congrats, .no-congrats {
+    display: none;
+}
+
+#zip-submit {
+    border: none;
+    padding: 6px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+#zip-submit:hover {
+    cursor: pointer;
+}
+
 
 
 
