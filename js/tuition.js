@@ -4,8 +4,8 @@ Date: 4/14/25
 */
 
 // here i set my dom variables using the document object
-inStateSelection = document.getElementById('in-state');
-outStateSelection = document.getElementById('out-state');
+const inStateSelection = document.getElementById('in-state');
+const outStateSelection = document.getElementById('out-state');
 
 function calculateTuition(tuition) {
     // this function takes the user selection and multiplies it by in state or out of state tuition cost. it stores the selection as a variable and converts it to an integer. it then calculates the total. it then targets the span element and updates the text with the total amount that is convereted to a formatted string that includes commas for thousands place using toLocaleString()
