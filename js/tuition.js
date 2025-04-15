@@ -44,7 +44,11 @@ function calculateRate() {
             document.querySelector('.congrats').style.display = "none";
             document.querySelector('.no-congrats').style.display = "block";
         }
-    } 
+    } else {
+        alert("please enter a valid zip code")
+        document.querySelector('.congrats').style.display = "none";
+        document.querySelector('.no-congrats').style.display = "none";
+    }
 };
 
 // here i attached an event listener and called the calculateRate function.
