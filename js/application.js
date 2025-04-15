@@ -3,38 +3,10 @@ Steven Gaona STE2342585
 Date: 4/11/25
 */
 
-// ********** TUITION PAGE ********** //
-inStateSelection = document.getElementById('in-state');
-outStateSelection = document.getElementById('out-state');
-
-function calculateTuition(tuition) {
-    // this function takes the user selection and multiplies it by in state or out of state tuition cost. it stores the selection as a variable and converts it to an integer. it then calculates the total. it then targets the span element and updates the text with the total amount that is convereted to a formatted string that includes commas for thousands place using toLocaleString()
-    if (tuition == 5000) {
-        let semesters = parseInt(inStateSelection.value);
-        semesters = semesters * tuition;
-        document.getElementById('in-state-total').innerText = `$${semesters.toLocaleString()}`;
-    } else if (tuition == 10000) {
-        let semesters = parseInt(outStateSelection.value);
-        semesters = semesters * tuition;
-        document.getElementById('out-state-total').innerText = `$${semesters.toLocaleString()}`;
-    }
-}
-
-// this code attaches the event listeners to the semester selections and invokes the in state or out of state tuition cost and updates the total to the user on the screen. 
-inStateSelection.addEventListener('change', () => {
-    calculateTuition(5000);
-});
-outStateSelection.addEventListener('change', () => {
-    calculateTuition(10000);
-});
 
 
-
-
-
-
-// ********** APPLICATION PAGE ********** //
-const form = document.getElementById("form");
+// here i set my dom variables using the document object
+const form = document.getElementById('form');
 const firstNameInput = document.querySelector('.first-name input[type="text"]');
 const lastNameInput = document.querySelector('.last-name input[type="text"]');
 const emailInput = document.getElementById("email");
@@ -114,7 +86,7 @@ degreeSelection.addEventListener('change', () => {
 
 // this code applies the final form validation before submission. it uses prevent default to prevent the page from refreshing and clearing the user inputs and selections. it uses if logic to check and make sure that all variables are true before dislaying a confirmation message to the user. 
 // it then also perfoms some more if logic that makes sure the green or red emojis only display at the right times. if the user leaves any fields blank, it provides a red emoji next to each label. all fields must pass before cofirmation message appears
-submitButton.addEventListener('click', () => {
+submitButton.addEventListener('click', (event) => {
     event.preventDefault();
 
     if (checkFirst && checkLast && checkEmail && checkPhone && checkID && checkDegree) {
