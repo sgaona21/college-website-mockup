@@ -25,15 +25,18 @@ Date: 4/11/25 -->
     <h2>Projects Page:</h2>
 
     <!-- Here is the markup for the ordered list that will display the info for my projects page -->
-    <ol>
-        <li>ALL JavaScript activity can be found on the <a id="link" href="application.html">"Application Page"</a></li>
-        <li>1. Function: inputValidation - this function takes a regular expression and uses it to validate the user input for the first and last name. It then returns a boolean.</li>
-        <li>2. Function: generateStudentID - this function is used for the student ID input section on the application page. The input has been disabled by applying readonly in the html but is designed for the user to click the "generate" button and it will generate a random 6 digit number.</li>
-        <li>3. Event Listener: form.addEventListener - This listener uses the focus out event for the entire form. Inside, it makes multiple calls to the inputValidation functions and plugs in the parameters needed. It then assigns the value of each function call to a variable that will later be used to validate the entire form. </li>
-        <li>4. Button Click: genButton.AddEventListener - This button is used to invoke the generateStudentID function. It then generates the value for the student ID section on the Application.</li>
-        <li>5. Change Event: degreeSelection.addEventListener - This change event includes if/else logic to determine and make sure the user has selected an option from the select menu on the application page. It then updates the boolean value for the section validation</li>
-        <li>6. Click Event/Prevent Default/Logic: submitButton - this submit button is runs the final form validation upon being clicked. It uses if statements to makes sure that all fields have been filled out and then provides the user feedback if the form was submitted successfully or not. </li>
-        <li>Reflection: My goal here was to create a simple mockup of a college website. I used the application page to implement all of my javascript. I feel like there is more JS included than the 5 elements that were required for the project but it was hard to pinpoint it. For example, I attempted to make the code more clean and efficient by making the inputValidation function take multiple parameters to minimize code repetition. A challenge I faced was in my click event for my submitButton. I feel like the code is a bit repetative but it was the best I could do. The biggest challenge I had was the final validation for the entire form. I used multiple variables instead of one to check the validation. Overall it was a fun project!</li>
+    <ol id="projects">
+        <li>1: Business Button: located on the <a href="degrees.html">Degree Programs Page</a> - This button displays all the degree programs affiliated with the Business field.</li>
+        <li>2: Technology Button: located on the <a href="degrees.html">Degree Programs Page</a> - This button displays all the degree programs affiliated with the Technology field.</li>
+        <li>3: In-State-Calculator: located on the <a href="tuition.html">Tuition Page</a> - This calculator takes the number of semesters and outputs the in-state price.</li>
+        <li>4: Out-of-State-Calculator: located on the <a href="tuition.html">Tuition Page</a> - This calculator takes the number of semesters and outputs the out-of-state price.</li>
+        <li>5: Zip Code Rate Generator: located on the <a href="tuition.html">Tuition Page</a> - This input takes a zip code and determines whether the tuition rate is in or out of state.</li>
+        <li>6: Frist, Last, Email, and Phone Number fields: located on the <a href="application.html">Tuition Page</a> - These inputs perform a validation check and provide a green or red checkmark to the user using the "focusout" event</li>
+        <li>7: Student ID Generate Button: located on the <a href="application.html">Tuition Page</a> - This field is readonly and it will generate a 6 digit school ID number when the "generate" button is clicked.</li>
+        <li>8: Select a Program Input: located on the <a href="application.html">Tuition Page</a> - This field will give the user a green checkmark when an option is selected.</li>
+        <li>9: Submit Button: located on the <a href="application.html">Tuition Page</a> - This input type will run a final validation for the entire form and then provide a confirmation message to the user.</li>
+        
+        <li>Reflection: My goal here was to create a simple mockup of a college website. A challenge I faced was in my click event for my submitButton. I feel like the code is a bit repetative but it was the best I could do. The biggest challenge I had was the final validation for the entire form. I used multiple variables instead of one to check the validation. Overall it was a fun project!</li>
     </ol>
 </body>
 </html>
